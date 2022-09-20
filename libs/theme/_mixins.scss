@@ -6,3 +6,14 @@
   padding-left: v.$brand-padding;
   padding-right: v.$brand-padding;
 }
+
+@mixin headerLink() {
+  display: inline-block;
+  padding: v.$unit 0;
+  @include link();
+  &:hover {
+    background: v.$brand-bg;
+    color: white;
+    transition: 0.3s;
+  }
+}

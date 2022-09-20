@@ -1,4 +1,9 @@
-<h1>Account Details</h1>
 
-<p>Account ID</p>
+<h1 *ngIf="account; else notexist">Balance: {{account.balance}}, Currency: {{account.currency}}</h1>
+
+<p *ngIf="id; else notexist">ID: {{id}}</p>
+
+<ng-template #notexist>
+  <h1>Something went wrong, Either id does not exist or some technical issues</h1>
+</ng-template>
 <!-- TODO: how to retrieve account id and other account details in this route? -->

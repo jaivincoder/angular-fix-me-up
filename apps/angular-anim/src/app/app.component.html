@@ -2,11 +2,34 @@
 <!-- TODO: 3. Use Semantic HTML properly, what's wrong with this usage of main -->
 <!-- TODO: 4. Our header and footer are suppose to fill the full width of the page and sit flush to the top / bottom -->
 <!-- e.g. no whitespace around the header / footer -->
-<main>
-  <pre-header [userName]="userName$"></pre-header>
+
+<!--Comment from JaivinMovaliya-->
+
+<!--There are numerous reasons why the main tag should be used like it was being used.
+
+The <main> element is used to indicate the content of a webpage that is related to the page's or application's main topic.
+The basic concept of the <main> tag is to include content that is unique to the webpage and should not include content that is duplicated across multiple web pages.
+Since we have the same header, nav with page navigation links, and footer across the whole application, they should not be inside the <main> tag.
+
+Semantic HTML tags are crucial because they enable browsers to make assumptions about how to style, make interactive, or read.
+For instance, if we don't use a button tag or a roll attribute containing a button value, browsers won't recognize that the focus should be on a button when a user uses the tab key.
+In addition, if we do not use them properly, it would be less advantageous for those who have vision problems.
+
+Additionally, it would be helpful for SEO as it will make it easier for bots to understand the significance of the tags and .
+
+As the components contain headings with heading tags and the related contents, the section should be as it is shown below.
+
+ -->
+
+
+<!--Comment from Jaivin Movaliya-->
+
+
+<pre-header [userName]="userName$"></pre-header>
+<pre-side-nav [sideNavItems]="sideNavItems"></pre-side-nav>
+<main role="main">
   <section>
-    <pre-side-nav [sideNavItems]="sideNavItems"></pre-side-nav>
     <router-outlet></router-outlet>
   </section>
-  <pre-footer></pre-footer>
 </main>
+<pre-footer></pre-footer>

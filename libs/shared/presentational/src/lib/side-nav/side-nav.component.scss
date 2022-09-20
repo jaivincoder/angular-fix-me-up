@@ -2,13 +2,5 @@
 
 // TODO: 14. fix the deprecation
 a {
-  @include link();
-  padding-top: $unit;
-  padding-bottom: $unit;
-  display: inline-block;
-  &:hover {
-    background: $brand-bg;
-    color: white;
-    transition: 0.3s;
-  }
+  @include headerLink()
 }

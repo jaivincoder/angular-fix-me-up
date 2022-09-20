@@ -16,7 +16,10 @@ section {
 .nav-offsite {
   a {
     // TODO: 12. something's off with this include
-    // @include link();
+     @include theme.link();
     color: white;
+  }
+  a:last-child{
+  margin-right: 20px;
   }
 }

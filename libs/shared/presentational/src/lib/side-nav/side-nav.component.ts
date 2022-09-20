@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { SideNavItem } from '../models/side-nav';
 
 @Component({
@@ -8,4 +8,6 @@ import { SideNavItem } from '../models/side-nav';
 })
 export class SideNavComponent {
   @Input() sideNavItems: SideNavItem[] = [];
+
+
 }

@@ -10,7 +10,6 @@ const EXPORTS = [
 ];
 
 @NgModule({
-  // remove RouterModule
   imports: [CommonModule, RouterModule],
   declarations: [...EXPORTS],
   exports: [...EXPORTS]

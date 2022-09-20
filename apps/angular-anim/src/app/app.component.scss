@@ -1,10 +1,14 @@
 // TODO: 5. Fixing one thing may break other things, but sometimes it has to be done
+
+// Jaivin comment
+//Here, nothing seems to be wrong; everything was used to reserve the space for the header, main, and  footer. Considering the same design is required, nothing should be changed.
+//As the main content should have some space on both sides, which is getting handled by the paddings, I have changed it to shorthand.
+// It depends on the design as well. Assuming the design should not be changed, otherwise changes could have been made as per requirements.
+//Now the header and footer are as per the requirements. Considering not changing the rest of the design,  do not need the first two properties which were mentioned before.
+
 main {
   // try to keep these
-  display: grid;
-  grid-template-rows: 40px 1fr 40px;
   min-height: 100vh;
   // don't  really care about the below
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0px 20px;
 }
